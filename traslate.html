@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .a{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        /* transition: all 3s; */
+        animation-name: name;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+     }
+     @keyframes name{
+        from{
+            transform: translateX(500px);
+        }
+        to{
+            transform: scale(2); transform: translateY(20px);
+        }
+     }
+     .aa{
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;
+        animation: namee;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+     }
+     @keyframes namee{
+        0%{
+            background-color: blue; transform: translateX(10px);
+        }
+        15%{
+            background-color: green;transform: translatex(150px);
+        }
+        50%{
+            transform: translateX(200px);background-color: aqua;
+        }
+        100%{
+            transform: translateX(500px);
+        }
+
+     }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    
+    <div class="aa"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<tml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .line{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            /* border-radius: 50px; */
+            margin: 10px;
+            animation: scale 2000ms infinite;
+        }
+        @keyframes scale{
+            0%{
+                transform: scaley(0.5);
+            }
+            30%{
+                transform: scaley(2px);
+            }
+        }
+        .m{
+            display: flex;
+        }
+</style>
+</head>
+<body>
+    <div class="m">
+        <div class="line"></div>
+        <div class="line" style="animation-delay: 100ms;"></div>
+        <div class="line" style="animation-delay: 200ms;"></div>
+        <div class="line" style="animation-delay: 300ms;"></div>
+        <div class="line" style="animation-delay: 400ms;"></div>
+        <div class="line" style="animation-delay: 500ms;"></div>
+    </div>
+</body>
+</html>
